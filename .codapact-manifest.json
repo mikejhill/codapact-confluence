@@ -1,0 +1,15 @@
+{
+  "config_sha256": "bdbe14d20672a487a423dbd12a7e416be83fb61ca75ae4f73ec6629ffebe69a3",
+  "files": {
+    "README.md": "8b314ce80d71203f27f273bb2bee4a4e3cae0afe5b3f08a834eb9a09464b8c0b"
+  },
+  "generated_at": "2026-11-21T18:48:25Z",
+  "generator": "codapact/0.12.0",
+  "source": {
+    "location": "openapi.json",
+    "sha256": "40535e2a2c01547d53d824d68299098c9073e5bf7ed98a71634706759becfa31",
+    "type": "openapi",
+    "upstream": "https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json"
+  },
+  "version": 1
+}
