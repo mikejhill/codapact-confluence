@@ -11,7 +11,7 @@
     }
   ],
   "docs": "This document describes Confluence's v2 APIs. This is intended to be an iteration on the existing Confluence Cloud REST API with improvements in both endpoint definitions and performance.",
-  "model_version": 3,
+  "model_version": 4,
   "name": "The Confluence Cloud REST API v2",
   "operations": [
     {
@@ -40381,8 +40381,8 @@
           "name": "value",
           "type": {
             "inner": {
-              "kind": "primitive",
-              "scalar": "any"
+              "kind": "literal",
+              "value": null
             },
             "kind": "nullable"
           }
