@@ -1,8 +1,8 @@
 {
   "config_sha256": "bdbe14d20672a487a423dbd12a7e416be83fb61ca75ae4f73ec6629ffebe69a3",
   "files": {
-    "README.md": "aa3796b260bd8d025f637acad9213d5d438a9421fef1e0621ff4b1c8f4037706",
-    "pyproject.toml": "912122e2b7ae5272455eb8f20b04422f73eb91b09e0cbc1264df37d485bd9ec5",
+    "README.md": "a425a2c14bf399b362bbf2437b0dc9ba490f1dbffd3931f7e005327c0fd580be",
+    "pyproject.toml": "3fc8e28b4d89e4ff570c16759f03bf01b52a04a4fc9ca2a513c1e9d8305c3969",
     "src/codapact_confluence/__init__.py": "04456fcab490bd03745796a9af2de4b6cadc13bdf842d6de261ee1a263f52b8d",
     "src/codapact_confluence/__main__.py": "c66f72e21443a96f151e35aebc1c0711090aaf3eff12540bb4e3f67c2f06bc1c",
     "src/codapact_confluence/_docformat.py": "b44372c85257e42196cf9f15d792788d690877c8956a1b32783711621f1bd465",
@@ -14,8 +14,8 @@
     "tests/e2e.json": "9c2dbacb186bd2f8e46d873790736a5dc02a955a7a54e2c883eb9bebac48a900",
     "tests/test_e2e.py": "f5e47f5eeddb7346a6561b9dfda1494022cc3846ddcd7fffb874bdd52583ffce"
   },
-  "generated_at": "2026-11-22T23:37:06Z",
-  "generator": "codapact/0.16.0",
+  "generated_at": "2026-11-24T21:53:07Z",
+  "generator": "codapact/0.17.0",
   "source": {
     "location": "openapi.json",
     "sha256": "40535e2a2c01547d53d824d68299098c9073e5bf7ed98a71634706759becfa31",
