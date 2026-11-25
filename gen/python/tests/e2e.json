@@ -1,0 +1,4751 @@
+{
+  "dry_runs": [
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "admin-key get",
+      "path": "/wiki/api/v2/admin\\-key$",
+      "run": [
+        "admin-key",
+        "get"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "admin-key enable",
+      "path": "/wiki/api/v2/admin\\-key$",
+      "run": [
+        "admin-key",
+        "enable"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "admin-key disable",
+      "path": "/wiki/api/v2/admin\\-key$",
+      "run": [
+        "admin-key",
+        "disable",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "ancestors list-whiteboard",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/ancestors$",
+      "run": [
+        "ancestors",
+        "list-whiteboard",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "ancestors list-database",
+      "path": "/wiki/api/v2/databases/[^/]+/ancestors$",
+      "run": [
+        "ancestors",
+        "list-database",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "ancestors list-smart-link",
+      "path": "/wiki/api/v2/embeds/[^/]+/ancestors$",
+      "run": [
+        "ancestors",
+        "list-smart-link",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "ancestors list-folder",
+      "path": "/wiki/api/v2/folders/[^/]+/ancestors$",
+      "run": [
+        "ancestors",
+        "list-folder",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "ancestors list-page",
+      "path": "/wiki/api/v2/pages/[^/]+/ancestors$",
+      "run": [
+        "ancestors",
+        "list-page",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "app-properties list",
+      "path": "/wiki/api/v2/app/properties$",
+      "run": [
+        "app-properties",
+        "list"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "app-properties get",
+      "path": "/wiki/api/v2/app/properties/[^/]+$",
+      "run": [
+        "app-properties",
+        "get",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "app-properties put",
+      "path": "/wiki/api/v2/app/properties/[^/]+$",
+      "run": [
+        "app-properties",
+        "put",
+        "sample",
+        "--body",
+        "{}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "app-properties delete",
+      "path": "/wiki/api/v2/app/properties/[^/]+$",
+      "run": [
+        "app-properties",
+        "delete",
+        "sample",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment list-attachments",
+      "path": "/wiki/api/v2/attachments$",
+      "run": [
+        "attachment",
+        "list-attachments"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment get",
+      "path": "/wiki/api/v2/attachments/[^/]+$",
+      "run": [
+        "attachment",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "attachment delete",
+      "path": "/wiki/api/v2/attachments/[^/]+$",
+      "run": [
+        "attachment",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment list-blogpost-attachments",
+      "path": "/wiki/api/v2/blogposts/[^/]+/attachments$",
+      "run": [
+        "attachment",
+        "list-blogpost-attachments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment list-custom-content-attachments",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/attachments$",
+      "run": [
+        "attachment",
+        "list-custom-content-attachments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment list-label-attachments",
+      "path": "/wiki/api/v2/labels/[^/]+/attachments$",
+      "run": [
+        "attachment",
+        "list-label-attachments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment list-page-attachments",
+      "path": "/wiki/api/v2/pages/[^/]+/attachments$",
+      "run": [
+        "attachment",
+        "list-page-attachments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "attachment get-thumbnail",
+      "path": "/wiki/api/v2/attachments/[^/]+/thumbnail/download$",
+      "run": [
+        "attachment",
+        "get-thumbnail",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "blog-post list-blog-posts",
+      "path": "/wiki/api/v2/blogposts$",
+      "run": [
+        "blog-post",
+        "list-blog-posts"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "blog-post create",
+      "path": "/wiki/api/v2/blogposts$",
+      "run": [
+        "blog-post",
+        "create",
+        "--space-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "blog-post get",
+      "path": "/wiki/api/v2/blogposts/[^/]+$",
+      "run": [
+        "blog-post",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "blog-post update",
+      "path": "/wiki/api/v2/blogposts/[^/]+$",
+      "run": [
+        "blog-post",
+        "update",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"status\": \"current\", \"title\": \"sample\", \"body\": {}, \"version\": {}}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "blog-post delete",
+      "path": "/wiki/api/v2/blogposts/[^/]+$",
+      "run": [
+        "blog-post",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "blog-post list-label-blog-posts",
+      "path": "/wiki/api/v2/labels/[^/]+/blogposts$",
+      "run": [
+        "blog-post",
+        "list-label-blog-posts",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "blog-post get-blog-posts-in-space",
+      "path": "/wiki/api/v2/spaces/[^/]+/blogposts$",
+      "run": [
+        "blog-post",
+        "get-blog-posts-in-space",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children get-whiteboard-direct",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/direct\\-children$",
+      "run": [
+        "children",
+        "get-whiteboard-direct",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children get-database-direct",
+      "path": "/wiki/api/v2/databases/[^/]+/direct\\-children$",
+      "run": [
+        "children",
+        "get-database-direct",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children get-smart-link-direct",
+      "path": "/wiki/api/v2/embeds/[^/]+/direct\\-children$",
+      "run": [
+        "children",
+        "get-smart-link-direct",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children get-folder-direct",
+      "path": "/wiki/api/v2/folders/[^/]+/direct\\-children$",
+      "run": [
+        "children",
+        "get-folder-direct",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children list-child-pages",
+      "path": "/wiki/api/v2/pages/[^/]+/children$",
+      "run": [
+        "children",
+        "list-child-pages",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children get-child-custom-content",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/children$",
+      "run": [
+        "children",
+        "get-child-custom-content",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "children get-page-direct",
+      "path": "/wiki/api/v2/pages/[^/]+/direct\\-children$",
+      "run": [
+        "children",
+        "get-page-direct",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "classification-level list-classification-levels",
+      "path": "/wiki/api/v2/classification\\-levels$",
+      "run": [
+        "classification-level",
+        "list-classification-levels"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "classification-level get-space-default",
+      "path": "/wiki/api/v2/spaces/[^/]+/classification\\-level/default$",
+      "run": [
+        "classification-level",
+        "get-space-default",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "classification-level put-space-default",
+      "path": "/wiki/api/v2/spaces/[^/]+/classification\\-level/default$",
+      "run": [
+        "classification-level",
+        "put-space-default",
+        "1",
+        "--body",
+        "{\"id\": \"sample\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "classification-level delete",
+      "path": "/wiki/api/v2/spaces/[^/]+/classification\\-level/default$",
+      "run": [
+        "classification-level",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "classification-level get-page",
+      "path": "/wiki/api/v2/pages/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "get-page",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "classification-level put-page",
+      "path": "/wiki/api/v2/pages/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "put-page",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"status\": \"current\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "classification-level post-page",
+      "path": "/wiki/api/v2/pages/[^/]+/classification\\-level/reset$",
+      "run": [
+        "classification-level",
+        "post-page",
+        "1",
+        "--status",
+        "current"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "classification-level get-blog-post",
+      "path": "/wiki/api/v2/blogposts/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "get-blog-post",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "classification-level put-blog-post",
+      "path": "/wiki/api/v2/blogposts/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "put-blog-post",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"status\": \"current\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "classification-level post-blog-post",
+      "path": "/wiki/api/v2/blogposts/[^/]+/classification\\-level/reset$",
+      "run": [
+        "classification-level",
+        "post-blog-post",
+        "1",
+        "--status",
+        "current"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "classification-level get-whiteboard",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "get-whiteboard",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "classification-level put-whiteboard",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "put-whiteboard",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"status\": \"current\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "classification-level post-whiteboard",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/classification\\-level/reset$",
+      "run": [
+        "classification-level",
+        "post-whiteboard",
+        "1",
+        "--status",
+        "current"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "classification-level get-database",
+      "path": "/wiki/api/v2/databases/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "get-database",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "classification-level put-database",
+      "path": "/wiki/api/v2/databases/[^/]+/classification\\-level$",
+      "run": [
+        "classification-level",
+        "put-database",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"status\": \"current\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "classification-level post-database",
+      "path": "/wiki/api/v2/databases/[^/]+/classification\\-level/reset$",
+      "run": [
+        "classification-level",
+        "post-database",
+        "1",
+        "--status",
+        "current"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-attachment-comments",
+      "path": "/wiki/api/v2/attachments/[^/]+/footer\\-comments$",
+      "run": [
+        "comment",
+        "list-attachment-comments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-custom-content-comments",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/footer\\-comments$",
+      "run": [
+        "comment",
+        "list-custom-content-comments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-page-footer-comments",
+      "path": "/wiki/api/v2/pages/[^/]+/footer\\-comments$",
+      "run": [
+        "comment",
+        "list-page-footer-comments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-page-inline-comments",
+      "path": "/wiki/api/v2/pages/[^/]+/inline\\-comments$",
+      "run": [
+        "comment",
+        "list-page-inline-comments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-blog-post-footer-comments",
+      "path": "/wiki/api/v2/blogposts/[^/]+/footer\\-comments$",
+      "run": [
+        "comment",
+        "list-blog-post-footer-comments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-blog-post-inline-comments",
+      "path": "/wiki/api/v2/blogposts/[^/]+/inline\\-comments$",
+      "run": [
+        "comment",
+        "list-blog-post-inline-comments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-footer-comments",
+      "path": "/wiki/api/v2/footer\\-comments$",
+      "run": [
+        "comment",
+        "list-footer-comments"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "comment create-footer",
+      "path": "/wiki/api/v2/footer\\-comments$",
+      "run": [
+        "comment",
+        "create-footer",
+        "--blog-post-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment get-footer",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+$",
+      "run": [
+        "comment",
+        "get-footer",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "comment update-footer",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+$",
+      "run": [
+        "comment",
+        "update-footer",
+        "1",
+        "--arg-version",
+        "{}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "comment delete-footer",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+$",
+      "run": [
+        "comment",
+        "delete-footer",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment get-footer-children",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+/children$",
+      "run": [
+        "comment",
+        "get-footer-children",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment list-inline-comments",
+      "path": "/wiki/api/v2/inline\\-comments$",
+      "run": [
+        "comment",
+        "list-inline-comments"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "comment create-inline",
+      "path": "/wiki/api/v2/inline\\-comments$",
+      "run": [
+        "comment",
+        "create-inline",
+        "--blog-post-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment get-inline",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+$",
+      "run": [
+        "comment",
+        "get-inline",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "comment update-inline",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+$",
+      "run": [
+        "comment",
+        "update-inline",
+        "1",
+        "--arg-version",
+        "{}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "comment delete-inline",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+$",
+      "run": [
+        "comment",
+        "delete-inline",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "comment get-inline-children",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+/children$",
+      "run": [
+        "comment",
+        "get-inline-children",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content convert-ids-to-content-types",
+      "path": "/wiki/api/v2/content/convert\\-ids\\-to\\-types$",
+      "run": [
+        "content",
+        "convert-ids-to-content-types",
+        "--content-ids",
+        "[\"sample\"]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions get-page-restriction-state",
+      "path": "/wiki/api/v2/pages/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "get-page-restriction-state",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-page-restriction-state",
+      "path": "/wiki/api/v2/pages/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "set-page-restriction-state",
+        "1",
+        "--state",
+        "OPEN"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions get-blog-post-restriction-state",
+      "path": "/wiki/api/v2/blogposts/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "get-blog-post-restriction-state",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-blog-post-restriction-state",
+      "path": "/wiki/api/v2/blogposts/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "set-blog-post-restriction-state",
+        "1",
+        "--state",
+        "OPEN"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions get-database-restriction-state",
+      "path": "/wiki/api/v2/databases/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "get-database-restriction-state",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-database-restriction-state",
+      "path": "/wiki/api/v2/databases/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "set-database-restriction-state",
+        "1",
+        "--state",
+        "OPEN"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions get-whiteboard-restriction-state",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "get-whiteboard-restriction-state",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-whiteboard-restriction-state",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "set-whiteboard-restriction-state",
+        "1",
+        "--state",
+        "OPEN"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions get-folder-restriction-state",
+      "path": "/wiki/api/v2/folders/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "get-folder-restriction-state",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-folder-restriction-state",
+      "path": "/wiki/api/v2/folders/[^/]+/restriction\\-state$",
+      "run": [
+        "content-permissions",
+        "set-folder-restriction-state",
+        "1",
+        "--state",
+        "OPEN"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions list-page-permissions",
+      "path": "/wiki/api/v2/pages/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "list-page-permissions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-page-permissions",
+      "path": "/wiki/api/v2/pages/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "set-page-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-permissions add-page-permissions",
+      "path": "/wiki/api/v2/pages/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "add-page-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-permissions delete-page-permissions",
+      "path": "/wiki/api/v2/pages/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "delete-page-permissions",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions list-blog-post-permissions",
+      "path": "/wiki/api/v2/blogposts/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "list-blog-post-permissions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-blog-post-permissions",
+      "path": "/wiki/api/v2/blogposts/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "set-blog-post-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-permissions add-blog-post-permissions",
+      "path": "/wiki/api/v2/blogposts/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "add-blog-post-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-permissions delete-blog-post-permissions",
+      "path": "/wiki/api/v2/blogposts/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "delete-blog-post-permissions",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions list-database-permissions",
+      "path": "/wiki/api/v2/databases/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "list-database-permissions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-database-permissions",
+      "path": "/wiki/api/v2/databases/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "set-database-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-permissions add-database-permissions",
+      "path": "/wiki/api/v2/databases/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "add-database-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-permissions delete-database-permissions",
+      "path": "/wiki/api/v2/databases/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "delete-database-permissions",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions list-whiteboard-permissions",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "list-whiteboard-permissions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-whiteboard-permissions",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "set-whiteboard-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-permissions add-whiteboard-permissions",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "add-whiteboard-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-permissions delete-whiteboard-permissions",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "delete-whiteboard-permissions",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-permissions list-folder-permissions",
+      "path": "/wiki/api/v2/folders/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "list-folder-permissions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-permissions set-folder-permissions",
+      "path": "/wiki/api/v2/folders/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "set-folder-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-permissions add-folder-permissions",
+      "path": "/wiki/api/v2/folders/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "add-folder-permissions",
+        "1",
+        "--permissions",
+        "[{\"operation\": \"read\", \"principals\": [{\"principalType\": \"user\", \"principalId\": \"sample\"}]}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-permissions delete-folder-permissions",
+      "path": "/wiki/api/v2/folders/[^/]+/permissions$",
+      "run": [
+        "content-permissions",
+        "delete-folder-permissions",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-attachment",
+      "path": "/wiki/api/v2/attachments/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-attachment",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-attachment-property",
+      "path": "/wiki/api/v2/attachments/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-attachment-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "name": "content-properties get-attachment-by-id",
+      "run": [
+        "content-properties",
+        "get-attachment-by-id"
+      ],
+      "skip": "no sample satisfies the constraints of --attachment-id"
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-attachment-property",
+      "path": "/wiki/api/v2/attachments/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-attachment-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-attachment-property",
+      "path": "/wiki/api/v2/attachments/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-attachment-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-blogpost",
+      "path": "/wiki/api/v2/blogposts/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-blogpost",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-blogpost-property",
+      "path": "/wiki/api/v2/blogposts/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-blogpost-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-blogpost-by-id",
+      "path": "/wiki/api/v2/blogposts/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-blogpost-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-blogpost-property",
+      "path": "/wiki/api/v2/blogposts/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-blogpost-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-blogpost-property",
+      "path": "/wiki/api/v2/blogposts/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-blogpost-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-custom-content",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-custom-content",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-custom-content-by-id",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-custom-content-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-page",
+      "path": "/wiki/api/v2/pages/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-page",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-page-property",
+      "path": "/wiki/api/v2/pages/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-page-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-page-by-id",
+      "path": "/wiki/api/v2/pages/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-page-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-page-property",
+      "path": "/wiki/api/v2/pages/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-page-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-page-property",
+      "path": "/wiki/api/v2/pages/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-page-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-whiteboard",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-whiteboard",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-whiteboard-property",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-whiteboard-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-whiteboard-by-id",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-whiteboard-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-whiteboard-property",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-whiteboard-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-whiteboard-property",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-whiteboard-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-database",
+      "path": "/wiki/api/v2/databases/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-database",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-database-property",
+      "path": "/wiki/api/v2/databases/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-database-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-database-by-id",
+      "path": "/wiki/api/v2/databases/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-database-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-database-property",
+      "path": "/wiki/api/v2/databases/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-database-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-database-property",
+      "path": "/wiki/api/v2/databases/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-database-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-smart-link",
+      "path": "/wiki/api/v2/embeds/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-smart-link",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-smart-link-property",
+      "path": "/wiki/api/v2/embeds/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-smart-link-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-smart-link-by-id",
+      "path": "/wiki/api/v2/embeds/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-smart-link-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-smart-link-property",
+      "path": "/wiki/api/v2/embeds/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-smart-link-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-smart-link-property",
+      "path": "/wiki/api/v2/embeds/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-smart-link-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-folder",
+      "path": "/wiki/api/v2/folders/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-folder",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-folder-property",
+      "path": "/wiki/api/v2/folders/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-folder-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-folder-by-id",
+      "path": "/wiki/api/v2/folders/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-folder-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-folder-property",
+      "path": "/wiki/api/v2/folders/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-folder-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-folder-property",
+      "path": "/wiki/api/v2/folders/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-folder-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties list-comment",
+      "path": "/wiki/api/v2/comments/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "list-comment",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "content-properties create-comment-property",
+      "path": "/wiki/api/v2/comments/[^/]+/properties$",
+      "run": [
+        "content-properties",
+        "create-comment-property",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "content-properties get-comment-by-id",
+      "path": "/wiki/api/v2/comments/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "get-comment-by-id",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "content-properties update-comment-property",
+      "path": "/wiki/api/v2/comments/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "update-comment-property",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "content-properties delete-comment-property",
+      "path": "/wiki/api/v2/comments/[^/]+/properties/[^/]+$",
+      "run": [
+        "content-properties",
+        "delete-comment-property",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "custom-content get-by-type-in-blog-post",
+      "path": "/wiki/api/v2/blogposts/[^/]+/custom\\-content$",
+      "run": [
+        "custom-content",
+        "get-by-type-in-blog-post",
+        "1",
+        "--type",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "custom-content get-by-type",
+      "path": "/wiki/api/v2/custom\\-content$",
+      "run": [
+        "custom-content",
+        "get-by-type",
+        "--type",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "custom-content create",
+      "path": "/wiki/api/v2/custom\\-content$",
+      "run": [
+        "custom-content",
+        "create",
+        "--type",
+        "sample",
+        "--title",
+        "sample",
+        "--body",
+        "{}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "custom-content get",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+$",
+      "run": [
+        "custom-content",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "custom-content update",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+$",
+      "run": [
+        "custom-content",
+        "update",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"type\": \"sample\", \"status\": \"current\", \"title\": \"sample\", \"body\": {}, \"version\": {}}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "custom-content delete",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+$",
+      "run": [
+        "custom-content",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "custom-content get-by-type-in-page",
+      "path": "/wiki/api/v2/pages/[^/]+/custom\\-content$",
+      "run": [
+        "custom-content",
+        "get-by-type-in-page",
+        "1",
+        "--type",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "custom-content get-by-type-in-space",
+      "path": "/wiki/api/v2/spaces/[^/]+/custom\\-content$",
+      "run": [
+        "custom-content",
+        "get-by-type-in-space",
+        "1",
+        "--type",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "data-policies get-metadata",
+      "path": "/wiki/api/v2/data\\-policies/metadata$",
+      "run": [
+        "data-policies",
+        "get-metadata"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "data-policies list-spaces",
+      "path": "/wiki/api/v2/data\\-policies/spaces$",
+      "run": [
+        "data-policies",
+        "list-spaces"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "database create",
+      "path": "/wiki/api/v2/databases$",
+      "run": [
+        "database",
+        "create",
+        "--space-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "database get",
+      "path": "/wiki/api/v2/databases/[^/]+$",
+      "run": [
+        "database",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "database delete",
+      "path": "/wiki/api/v2/databases/[^/]+$",
+      "run": [
+        "database",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "database list-fields",
+      "path": "/wiki/api/v2/databases/[^/]+/fields$",
+      "run": [
+        "database",
+        "list-fields",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "database list-views",
+      "path": "/wiki/api/v2/databases/[^/]+/views$",
+      "run": [
+        "database",
+        "list-views",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "database list-entries",
+      "path": "/wiki/api/v2/databases/[^/]+/entries$",
+      "run": [
+        "database",
+        "list-entries",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "database get-entry",
+      "path": "/wiki/api/v2/databases/[^/]+/entries/[^/]+$",
+      "run": [
+        "database",
+        "get-entry",
+        "1",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "descendants list-whiteboard",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/descendants$",
+      "run": [
+        "descendants",
+        "list-whiteboard",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "descendants list-database",
+      "path": "/wiki/api/v2/databases/[^/]+/descendants$",
+      "run": [
+        "descendants",
+        "list-database",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "descendants list-smart-link",
+      "path": "/wiki/api/v2/embeds/[^/]+/descendants$",
+      "run": [
+        "descendants",
+        "list-smart-link",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "descendants list-folder",
+      "path": "/wiki/api/v2/folders/[^/]+/descendants$",
+      "run": [
+        "descendants",
+        "list-folder",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "descendants list-page",
+      "path": "/wiki/api/v2/pages/[^/]+/descendants$",
+      "run": [
+        "descendants",
+        "list-page",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "folder create",
+      "path": "/wiki/api/v2/folders$",
+      "run": [
+        "folder",
+        "create",
+        "--space-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "folder get",
+      "path": "/wiki/api/v2/folders/[^/]+$",
+      "run": [
+        "folder",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "folder delete",
+      "path": "/wiki/api/v2/folders/[^/]+$",
+      "run": [
+        "folder",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-attachment-labels",
+      "path": "/wiki/api/v2/attachments/[^/]+/labels$",
+      "run": [
+        "label",
+        "list-attachment-labels",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-blog-post-labels",
+      "path": "/wiki/api/v2/blogposts/[^/]+/labels$",
+      "run": [
+        "label",
+        "list-blog-post-labels",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-custom-content-labels",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/labels$",
+      "run": [
+        "label",
+        "list-custom-content-labels",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-labels",
+      "path": "/wiki/api/v2/labels$",
+      "run": [
+        "label",
+        "list-labels"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-page-labels",
+      "path": "/wiki/api/v2/pages/[^/]+/labels$",
+      "run": [
+        "label",
+        "list-page-labels",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-space-labels",
+      "path": "/wiki/api/v2/spaces/[^/]+/labels$",
+      "run": [
+        "label",
+        "list-space-labels",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "label list-space-content-labels",
+      "path": "/wiki/api/v2/spaces/[^/]+/content/labels$",
+      "run": [
+        "label",
+        "list-space-content-labels",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like get-blog-post-count",
+      "path": "/wiki/api/v2/blogposts/[^/]+/likes/count$",
+      "run": [
+        "like",
+        "get-blog-post-count",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like list-blog-post-users",
+      "path": "/wiki/api/v2/blogposts/[^/]+/likes/users$",
+      "run": [
+        "like",
+        "list-blog-post-users",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like get-page-count",
+      "path": "/wiki/api/v2/pages/[^/]+/likes/count$",
+      "run": [
+        "like",
+        "get-page-count",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like list-page-users",
+      "path": "/wiki/api/v2/pages/[^/]+/likes/users$",
+      "run": [
+        "like",
+        "list-page-users",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like get-footer-count",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+/likes/count$",
+      "run": [
+        "like",
+        "get-footer-count",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like list-footer-users",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+/likes/users$",
+      "run": [
+        "like",
+        "list-footer-users",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like get-inline-count",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+/likes/count$",
+      "run": [
+        "like",
+        "get-inline-count",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "like list-inline-users",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+/likes/users$",
+      "run": [
+        "like",
+        "list-inline-users",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-attachment-operations",
+      "path": "/wiki/api/v2/attachments/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-attachment-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-blog-post-operations",
+      "path": "/wiki/api/v2/blogposts/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-blog-post-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-custom-content-operations",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-custom-content-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-page-operations",
+      "path": "/wiki/api/v2/pages/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-page-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-whiteboard-operations",
+      "path": "/wiki/api/v2/whiteboards/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-whiteboard-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-database-operations",
+      "path": "/wiki/api/v2/databases/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-database-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-smart-link-operations",
+      "path": "/wiki/api/v2/embeds/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-smart-link-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-folder-operations",
+      "path": "/wiki/api/v2/folders/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-folder-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-space-operations",
+      "path": "/wiki/api/v2/spaces/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-space-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-footer-comment-operations",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-footer-comment-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "operation list-inline-comment-operations",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+/operations$",
+      "run": [
+        "operation",
+        "list-inline-comment-operations",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "page list-label-pages",
+      "path": "/wiki/api/v2/labels/[^/]+/pages$",
+      "run": [
+        "page",
+        "list-label-pages",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "page list-pages",
+      "path": "/wiki/api/v2/pages$",
+      "run": [
+        "page",
+        "list-pages"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "page create",
+      "path": "/wiki/api/v2/pages$",
+      "run": [
+        "page",
+        "create",
+        "--space-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "page get",
+      "path": "/wiki/api/v2/pages/[^/]+$",
+      "run": [
+        "page",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "page update",
+      "path": "/wiki/api/v2/pages/[^/]+$",
+      "run": [
+        "page",
+        "update",
+        "1",
+        "--body",
+        "{\"id\": \"sample\", \"status\": \"current\", \"title\": \"sample\", \"body\": {}, \"version\": {}}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "page delete",
+      "path": "/wiki/api/v2/pages/[^/]+$",
+      "run": [
+        "page",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "page update-title",
+      "path": "/wiki/api/v2/pages/[^/]+/title$",
+      "run": [
+        "page",
+        "update-title",
+        "1",
+        "--status",
+        "current",
+        "--title",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "page get-pages-in-space",
+      "path": "/wiki/api/v2/spaces/[^/]+/pages$",
+      "run": [
+        "page",
+        "get-pages-in-space",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "redactions post-redact-page",
+      "path": "/wiki/api/v2/pages/[^/]+/redact$",
+      "run": [
+        "redactions",
+        "post-redact-page",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "redactions post-redact-blog",
+      "path": "/wiki/api/v2/blogposts/[^/]+/redact$",
+      "run": [
+        "redactions",
+        "post-redact-blog",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "smart-link create",
+      "path": "/wiki/api/v2/embeds$",
+      "run": [
+        "smart-link",
+        "create",
+        "--space-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "smart-link get",
+      "path": "/wiki/api/v2/embeds/[^/]+$",
+      "run": [
+        "smart-link",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "smart-link delete",
+      "path": "/wiki/api/v2/embeds/[^/]+$",
+      "run": [
+        "smart-link",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space list-spaces",
+      "path": "/wiki/api/v2/spaces$",
+      "run": [
+        "space",
+        "list-spaces"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space create",
+      "path": "/wiki/api/v2/spaces$",
+      "run": [
+        "space",
+        "create",
+        "--name",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space get",
+      "path": "/wiki/api/v2/spaces/[^/]+$",
+      "run": [
+        "space",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-permission-transition list-space-permission-combinations",
+      "path": "/wiki/api/v2/space\\-permissions/transition/combinations$",
+      "run": [
+        "space-permission-transition",
+        "list-space-permission-combinations"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space-permission-transition generate-space-permission-combinations",
+      "path": "/wiki/api/v2/space\\-permissions/transition/combinations$",
+      "run": [
+        "space-permission-transition",
+        "generate-space-permission-combinations"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space-permission-transition bulk-assign-space-permission-roles",
+      "path": "/wiki/api/v2/space\\-permissions/transition/role\\-assignments$",
+      "run": [
+        "space-permission-transition",
+        "bulk-assign-space-permission-roles",
+        "--assignments",
+        "[{\"permissionCombinationId\": \"sample\", \"principalTypeAssignments\": [{\"principalType\": \"USER\", \"removeAccess\": true}]}]",
+        "--space-selection",
+        "{\"spaceType\": \"ALL\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space-permission-transition bulk-remove-space-permission-access",
+      "path": "/wiki/api/v2/space\\-permissions/transition/access\\-removals$",
+      "run": [
+        "space-permission-transition",
+        "bulk-remove-space-permission-access",
+        "--permission-combination-ids",
+        "sample",
+        "--space-selection",
+        "{\"spaceType\": \"ALL\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-permission-transition get-task-status",
+      "path": "/wiki/api/v2/space\\-permissions/transition/tasks/[^/]+$",
+      "run": [
+        "space-permission-transition",
+        "get-task-status",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-permissions list-assignments",
+      "path": "/wiki/api/v2/spaces/[^/]+/permissions$",
+      "run": [
+        "space-permissions",
+        "list-assignments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-permissions list",
+      "path": "/wiki/api/v2/space\\-permissions$",
+      "run": [
+        "space-permissions",
+        "list"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-properties list",
+      "path": "/wiki/api/v2/spaces/[^/]+/properties$",
+      "run": [
+        "space-properties",
+        "list",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space-properties create",
+      "path": "/wiki/api/v2/spaces/[^/]+/properties$",
+      "run": [
+        "space-properties",
+        "create",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-properties get",
+      "path": "/wiki/api/v2/spaces/[^/]+/properties/[^/]+$",
+      "run": [
+        "space-properties",
+        "get",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "space-properties update",
+      "path": "/wiki/api/v2/spaces/[^/]+/properties/[^/]+$",
+      "run": [
+        "space-properties",
+        "update",
+        "1",
+        "1",
+        "--key",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "space-properties delete",
+      "path": "/wiki/api/v2/spaces/[^/]+/properties/[^/]+$",
+      "run": [
+        "space-properties",
+        "delete",
+        "1",
+        "1",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-roles list",
+      "path": "/wiki/api/v2/space\\-roles$",
+      "run": [
+        "space-roles",
+        "list"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space-roles create",
+      "path": "/wiki/api/v2/space\\-roles$",
+      "run": [
+        "space-roles",
+        "create",
+        "--name",
+        "sample",
+        "--description",
+        "sample",
+        "--space-permissions",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-roles get",
+      "path": "/wiki/api/v2/space\\-roles/[^/]+$",
+      "run": [
+        "space-roles",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "space-roles update",
+      "path": "/wiki/api/v2/space\\-roles/[^/]+$",
+      "run": [
+        "space-roles",
+        "update",
+        "sample",
+        "--name",
+        "sample",
+        "--description",
+        "sample",
+        "--space-permissions",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "space-roles delete",
+      "path": "/wiki/api/v2/space\\-roles/[^/]+$",
+      "run": [
+        "space-roles",
+        "delete",
+        "sample",
+        "--yes"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-roles get-mode",
+      "path": "/wiki/api/v2/space\\-role\\-mode$",
+      "run": [
+        "space-roles",
+        "get-mode"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "space-roles list-assignments",
+      "path": "/wiki/api/v2/spaces/[^/]+/role\\-assignments$",
+      "run": [
+        "space-roles",
+        "list-assignments",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "space-roles set-assignments",
+      "path": "/wiki/api/v2/spaces/[^/]+/role\\-assignments$",
+      "run": [
+        "space-roles",
+        "set-assignments",
+        "1",
+        "--body",
+        "[{\"principal\": {}}]"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "task list-tasks",
+      "path": "/wiki/api/v2/tasks$",
+      "run": [
+        "task",
+        "list-tasks"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "task get",
+      "path": "/wiki/api/v2/tasks/[^/]+$",
+      "run": [
+        "task",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "PUT",
+      "name": "task update",
+      "path": "/wiki/api/v2/tasks/[^/]+$",
+      "run": [
+        "task",
+        "update",
+        "1",
+        "--body",
+        "{\"status\": \"complete\"}"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "user create-bulk-lookup",
+      "path": "/wiki/api/v2/users\\-bulk$",
+      "run": [
+        "user",
+        "create-bulk-lookup",
+        "--account-ids",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "user check-access-by-email",
+      "path": "/wiki/api/v2/user/access/check\\-access\\-by\\-email$",
+      "run": [
+        "user",
+        "check-access-by-email",
+        "--emails",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "user invite-by-email",
+      "path": "/wiki/api/v2/user/access/invite\\-by\\-email$",
+      "run": [
+        "user",
+        "invite-by-email",
+        "--emails",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-attachment-versions",
+      "path": "/wiki/api/v2/attachments/[^/]+/versions$",
+      "run": [
+        "version",
+        "list-attachment-versions",
+        "1"
+      ]
+    },
+    {
+      "name": "version list-attachment-details",
+      "run": [
+        "version",
+        "list-attachment-details"
+      ],
+      "skip": "no sample satisfies the constraints of --attachment-id"
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-blog-post-versions",
+      "path": "/wiki/api/v2/blogposts/[^/]+/versions$",
+      "run": [
+        "version",
+        "list-blog-post-versions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-blog-post-details",
+      "path": "/wiki/api/v2/blogposts/[^/]+/versions/[^/]+$",
+      "run": [
+        "version",
+        "list-blog-post-details",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-page-versions",
+      "path": "/wiki/api/v2/pages/[^/]+/versions$",
+      "run": [
+        "version",
+        "list-page-versions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-page-details",
+      "path": "/wiki/api/v2/pages/[^/]+/versions/[^/]+$",
+      "run": [
+        "version",
+        "list-page-details",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-custom-content-versions",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/versions$",
+      "run": [
+        "version",
+        "list-custom-content-versions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-custom-content-details",
+      "path": "/wiki/api/v2/custom\\-content/[^/]+/versions/[^/]+$",
+      "run": [
+        "version",
+        "list-custom-content-details",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-footer-comment-versions",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+/versions$",
+      "run": [
+        "version",
+        "list-footer-comment-versions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-footer-comment-details",
+      "path": "/wiki/api/v2/footer\\-comments/[^/]+/versions/[^/]+$",
+      "run": [
+        "version",
+        "list-footer-comment-details",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-inline-comment-versions",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+/versions$",
+      "run": [
+        "version",
+        "list-inline-comment-versions",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "version list-inline-comment-details",
+      "path": "/wiki/api/v2/inline\\-comments/[^/]+/versions/[^/]+$",
+      "run": [
+        "version",
+        "list-inline-comment-details",
+        "1",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "POST",
+      "name": "whiteboard create",
+      "path": "/wiki/api/v2/whiteboards$",
+      "run": [
+        "whiteboard",
+        "create",
+        "--space-id",
+        "sample"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "GET",
+      "name": "whiteboard get",
+      "path": "/wiki/api/v2/whiteboards/[^/]+$",
+      "run": [
+        "whiteboard",
+        "get",
+        "1"
+      ]
+    },
+    {
+      "auth": [
+        "basic"
+      ],
+      "method": "DELETE",
+      "name": "whiteboard delete",
+      "path": "/wiki/api/v2/whiteboards/[^/]+$",
+      "run": [
+        "whiteboard",
+        "delete",
+        "1",
+        "--yes"
+      ]
+    }
+  ],
+  "help": [
+    [
+      "admin-key",
+      "get"
+    ],
+    [
+      "admin-key",
+      "enable"
+    ],
+    [
+      "admin-key",
+      "disable"
+    ],
+    [
+      "ancestors",
+      "list-whiteboard"
+    ],
+    [
+      "ancestors",
+      "list-database"
+    ],
+    [
+      "ancestors",
+      "list-smart-link"
+    ],
+    [
+      "ancestors",
+      "list-folder"
+    ],
+    [
+      "ancestors",
+      "list-page"
+    ],
+    [
+      "app-properties",
+      "list"
+    ],
+    [
+      "app-properties",
+      "get"
+    ],
+    [
+      "app-properties",
+      "put"
+    ],
+    [
+      "app-properties",
+      "delete"
+    ],
+    [
+      "attachment",
+      "list-attachments"
+    ],
+    [
+      "attachment",
+      "get"
+    ],
+    [
+      "attachment",
+      "delete"
+    ],
+    [
+      "attachment",
+      "list-blogpost-attachments"
+    ],
+    [
+      "attachment",
+      "list-custom-content-attachments"
+    ],
+    [
+      "attachment",
+      "list-label-attachments"
+    ],
+    [
+      "attachment",
+      "list-page-attachments"
+    ],
+    [
+      "attachment",
+      "get-thumbnail"
+    ],
+    [
+      "blog-post",
+      "list-blog-posts"
+    ],
+    [
+      "blog-post",
+      "create"
+    ],
+    [
+      "blog-post",
+      "get"
+    ],
+    [
+      "blog-post",
+      "update"
+    ],
+    [
+      "blog-post",
+      "delete"
+    ],
+    [
+      "blog-post",
+      "list-label-blog-posts"
+    ],
+    [
+      "blog-post",
+      "get-blog-posts-in-space"
+    ],
+    [
+      "children",
+      "get-whiteboard-direct"
+    ],
+    [
+      "children",
+      "get-database-direct"
+    ],
+    [
+      "children",
+      "get-smart-link-direct"
+    ],
+    [
+      "children",
+      "get-folder-direct"
+    ],
+    [
+      "children",
+      "list-child-pages"
+    ],
+    [
+      "children",
+      "get-child-custom-content"
+    ],
+    [
+      "children",
+      "get-page-direct"
+    ],
+    [
+      "classification-level",
+      "list-classification-levels"
+    ],
+    [
+      "classification-level",
+      "get-space-default"
+    ],
+    [
+      "classification-level",
+      "put-space-default"
+    ],
+    [
+      "classification-level",
+      "delete"
+    ],
+    [
+      "classification-level",
+      "get-page"
+    ],
+    [
+      "classification-level",
+      "put-page"
+    ],
+    [
+      "classification-level",
+      "post-page"
+    ],
+    [
+      "classification-level",
+      "get-blog-post"
+    ],
+    [
+      "classification-level",
+      "put-blog-post"
+    ],
+    [
+      "classification-level",
+      "post-blog-post"
+    ],
+    [
+      "classification-level",
+      "get-whiteboard"
+    ],
+    [
+      "classification-level",
+      "put-whiteboard"
+    ],
+    [
+      "classification-level",
+      "post-whiteboard"
+    ],
+    [
+      "classification-level",
+      "get-database"
+    ],
+    [
+      "classification-level",
+      "put-database"
+    ],
+    [
+      "classification-level",
+      "post-database"
+    ],
+    [
+      "comment",
+      "list-attachment-comments"
+    ],
+    [
+      "comment",
+      "list-custom-content-comments"
+    ],
+    [
+      "comment",
+      "list-page-footer-comments"
+    ],
+    [
+      "comment",
+      "list-page-inline-comments"
+    ],
+    [
+      "comment",
+      "list-blog-post-footer-comments"
+    ],
+    [
+      "comment",
+      "list-blog-post-inline-comments"
+    ],
+    [
+      "comment",
+      "list-footer-comments"
+    ],
+    [
+      "comment",
+      "create-footer"
+    ],
+    [
+      "comment",
+      "get-footer"
+    ],
+    [
+      "comment",
+      "update-footer"
+    ],
+    [
+      "comment",
+      "delete-footer"
+    ],
+    [
+      "comment",
+      "get-footer-children"
+    ],
+    [
+      "comment",
+      "list-inline-comments"
+    ],
+    [
+      "comment",
+      "create-inline"
+    ],
+    [
+      "comment",
+      "get-inline"
+    ],
+    [
+      "comment",
+      "update-inline"
+    ],
+    [
+      "comment",
+      "delete-inline"
+    ],
+    [
+      "comment",
+      "get-inline-children"
+    ],
+    [
+      "content",
+      "convert-ids-to-content-types"
+    ],
+    [
+      "content-permissions",
+      "get-page-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "set-page-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "get-blog-post-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "set-blog-post-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "get-database-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "set-database-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "get-whiteboard-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "set-whiteboard-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "get-folder-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "set-folder-restriction-state"
+    ],
+    [
+      "content-permissions",
+      "list-page-permissions"
+    ],
+    [
+      "content-permissions",
+      "set-page-permissions"
+    ],
+    [
+      "content-permissions",
+      "add-page-permissions"
+    ],
+    [
+      "content-permissions",
+      "delete-page-permissions"
+    ],
+    [
+      "content-permissions",
+      "list-blog-post-permissions"
+    ],
+    [
+      "content-permissions",
+      "set-blog-post-permissions"
+    ],
+    [
+      "content-permissions",
+      "add-blog-post-permissions"
+    ],
+    [
+      "content-permissions",
+      "delete-blog-post-permissions"
+    ],
+    [
+      "content-permissions",
+      "list-database-permissions"
+    ],
+    [
+      "content-permissions",
+      "set-database-permissions"
+    ],
+    [
+      "content-permissions",
+      "add-database-permissions"
+    ],
+    [
+      "content-permissions",
+      "delete-database-permissions"
+    ],
+    [
+      "content-permissions",
+      "list-whiteboard-permissions"
+    ],
+    [
+      "content-permissions",
+      "set-whiteboard-permissions"
+    ],
+    [
+      "content-permissions",
+      "add-whiteboard-permissions"
+    ],
+    [
+      "content-permissions",
+      "delete-whiteboard-permissions"
+    ],
+    [
+      "content-permissions",
+      "list-folder-permissions"
+    ],
+    [
+      "content-permissions",
+      "set-folder-permissions"
+    ],
+    [
+      "content-permissions",
+      "add-folder-permissions"
+    ],
+    [
+      "content-permissions",
+      "delete-folder-permissions"
+    ],
+    [
+      "content-properties",
+      "list-attachment"
+    ],
+    [
+      "content-properties",
+      "create-attachment-property"
+    ],
+    [
+      "content-properties",
+      "get-attachment-by-id"
+    ],
+    [
+      "content-properties",
+      "update-attachment-property"
+    ],
+    [
+      "content-properties",
+      "delete-attachment-property"
+    ],
+    [
+      "content-properties",
+      "list-blogpost"
+    ],
+    [
+      "content-properties",
+      "create-blogpost-property"
+    ],
+    [
+      "content-properties",
+      "get-blogpost-by-id"
+    ],
+    [
+      "content-properties",
+      "update-blogpost-property"
+    ],
+    [
+      "content-properties",
+      "delete-blogpost-property"
+    ],
+    [
+      "content-properties",
+      "list-custom-content"
+    ],
+    [
+      "content-properties",
+      "create"
+    ],
+    [
+      "content-properties",
+      "get-custom-content-by-id"
+    ],
+    [
+      "content-properties",
+      "update"
+    ],
+    [
+      "content-properties",
+      "delete"
+    ],
+    [
+      "content-properties",
+      "list-page"
+    ],
+    [
+      "content-properties",
+      "create-page-property"
+    ],
+    [
+      "content-properties",
+      "get-page-by-id"
+    ],
+    [
+      "content-properties",
+      "update-page-property"
+    ],
+    [
+      "content-properties",
+      "delete-page-property"
+    ],
+    [
+      "content-properties",
+      "list-whiteboard"
+    ],
+    [
+      "content-properties",
+      "create-whiteboard-property"
+    ],
+    [
+      "content-properties",
+      "get-whiteboard-by-id"
+    ],
+    [
+      "content-properties",
+      "update-whiteboard-property"
+    ],
+    [
+      "content-properties",
+      "delete-whiteboard-property"
+    ],
+    [
+      "content-properties",
+      "list-database"
+    ],
+    [
+      "content-properties",
+      "create-database-property"
+    ],
+    [
+      "content-properties",
+      "get-database-by-id"
+    ],
+    [
+      "content-properties",
+      "update-database-property"
+    ],
+    [
+      "content-properties",
+      "delete-database-property"
+    ],
+    [
+      "content-properties",
+      "list-smart-link"
+    ],
+    [
+      "content-properties",
+      "create-smart-link-property"
+    ],
+    [
+      "content-properties",
+      "get-smart-link-by-id"
+    ],
+    [
+      "content-properties",
+      "update-smart-link-property"
+    ],
+    [
+      "content-properties",
+      "delete-smart-link-property"
+    ],
+    [
+      "content-properties",
+      "list-folder"
+    ],
+    [
+      "content-properties",
+      "create-folder-property"
+    ],
+    [
+      "content-properties",
+      "get-folder-by-id"
+    ],
+    [
+      "content-properties",
+      "update-folder-property"
+    ],
+    [
+      "content-properties",
+      "delete-folder-property"
+    ],
+    [
+      "content-properties",
+      "list-comment"
+    ],
+    [
+      "content-properties",
+      "create-comment-property"
+    ],
+    [
+      "content-properties",
+      "get-comment-by-id"
+    ],
+    [
+      "content-properties",
+      "update-comment-property"
+    ],
+    [
+      "content-properties",
+      "delete-comment-property"
+    ],
+    [
+      "custom-content",
+      "get-by-type-in-blog-post"
+    ],
+    [
+      "custom-content",
+      "get-by-type"
+    ],
+    [
+      "custom-content",
+      "create"
+    ],
+    [
+      "custom-content",
+      "get"
+    ],
+    [
+      "custom-content",
+      "update"
+    ],
+    [
+      "custom-content",
+      "delete"
+    ],
+    [
+      "custom-content",
+      "get-by-type-in-page"
+    ],
+    [
+      "custom-content",
+      "get-by-type-in-space"
+    ],
+    [
+      "data-policies",
+      "get-metadata"
+    ],
+    [
+      "data-policies",
+      "list-spaces"
+    ],
+    [
+      "database",
+      "create"
+    ],
+    [
+      "database",
+      "get"
+    ],
+    [
+      "database",
+      "delete"
+    ],
+    [
+      "database",
+      "list-fields"
+    ],
+    [
+      "database",
+      "list-views"
+    ],
+    [
+      "database",
+      "list-entries"
+    ],
+    [
+      "database",
+      "get-entry"
+    ],
+    [
+      "descendants",
+      "list-whiteboard"
+    ],
+    [
+      "descendants",
+      "list-database"
+    ],
+    [
+      "descendants",
+      "list-smart-link"
+    ],
+    [
+      "descendants",
+      "list-folder"
+    ],
+    [
+      "descendants",
+      "list-page"
+    ],
+    [
+      "folder",
+      "create"
+    ],
+    [
+      "folder",
+      "get"
+    ],
+    [
+      "folder",
+      "delete"
+    ],
+    [
+      "label",
+      "list-attachment-labels"
+    ],
+    [
+      "label",
+      "list-blog-post-labels"
+    ],
+    [
+      "label",
+      "list-custom-content-labels"
+    ],
+    [
+      "label",
+      "list-labels"
+    ],
+    [
+      "label",
+      "list-page-labels"
+    ],
+    [
+      "label",
+      "list-space-labels"
+    ],
+    [
+      "label",
+      "list-space-content-labels"
+    ],
+    [
+      "like",
+      "get-blog-post-count"
+    ],
+    [
+      "like",
+      "list-blog-post-users"
+    ],
+    [
+      "like",
+      "get-page-count"
+    ],
+    [
+      "like",
+      "list-page-users"
+    ],
+    [
+      "like",
+      "get-footer-count"
+    ],
+    [
+      "like",
+      "list-footer-users"
+    ],
+    [
+      "like",
+      "get-inline-count"
+    ],
+    [
+      "like",
+      "list-inline-users"
+    ],
+    [
+      "operation",
+      "list-attachment-operations"
+    ],
+    [
+      "operation",
+      "list-blog-post-operations"
+    ],
+    [
+      "operation",
+      "list-custom-content-operations"
+    ],
+    [
+      "operation",
+      "list-page-operations"
+    ],
+    [
+      "operation",
+      "list-whiteboard-operations"
+    ],
+    [
+      "operation",
+      "list-database-operations"
+    ],
+    [
+      "operation",
+      "list-smart-link-operations"
+    ],
+    [
+      "operation",
+      "list-folder-operations"
+    ],
+    [
+      "operation",
+      "list-space-operations"
+    ],
+    [
+      "operation",
+      "list-footer-comment-operations"
+    ],
+    [
+      "operation",
+      "list-inline-comment-operations"
+    ],
+    [
+      "page",
+      "list-label-pages"
+    ],
+    [
+      "page",
+      "list-pages"
+    ],
+    [
+      "page",
+      "create"
+    ],
+    [
+      "page",
+      "get"
+    ],
+    [
+      "page",
+      "update"
+    ],
+    [
+      "page",
+      "delete"
+    ],
+    [
+      "page",
+      "update-title"
+    ],
+    [
+      "page",
+      "get-pages-in-space"
+    ],
+    [
+      "redactions",
+      "post-redact-page"
+    ],
+    [
+      "redactions",
+      "post-redact-blog"
+    ],
+    [
+      "smart-link",
+      "create"
+    ],
+    [
+      "smart-link",
+      "get"
+    ],
+    [
+      "smart-link",
+      "delete"
+    ],
+    [
+      "space",
+      "list-spaces"
+    ],
+    [
+      "space",
+      "create"
+    ],
+    [
+      "space",
+      "get"
+    ],
+    [
+      "space-permission-transition",
+      "list-space-permission-combinations"
+    ],
+    [
+      "space-permission-transition",
+      "generate-space-permission-combinations"
+    ],
+    [
+      "space-permission-transition",
+      "bulk-assign-space-permission-roles"
+    ],
+    [
+      "space-permission-transition",
+      "bulk-remove-space-permission-access"
+    ],
+    [
+      "space-permission-transition",
+      "get-task-status"
+    ],
+    [
+      "space-permissions",
+      "list-assignments"
+    ],
+    [
+      "space-permissions",
+      "list"
+    ],
+    [
+      "space-properties",
+      "list"
+    ],
+    [
+      "space-properties",
+      "create"
+    ],
+    [
+      "space-properties",
+      "get"
+    ],
+    [
+      "space-properties",
+      "update"
+    ],
+    [
+      "space-properties",
+      "delete"
+    ],
+    [
+      "space-roles",
+      "list"
+    ],
+    [
+      "space-roles",
+      "create"
+    ],
+    [
+      "space-roles",
+      "get"
+    ],
+    [
+      "space-roles",
+      "update"
+    ],
+    [
+      "space-roles",
+      "delete"
+    ],
+    [
+      "space-roles",
+      "get-mode"
+    ],
+    [
+      "space-roles",
+      "list-assignments"
+    ],
+    [
+      "space-roles",
+      "set-assignments"
+    ],
+    [
+      "task",
+      "list-tasks"
+    ],
+    [
+      "task",
+      "get"
+    ],
+    [
+      "task",
+      "update"
+    ],
+    [
+      "user",
+      "create-bulk-lookup"
+    ],
+    [
+      "user",
+      "check-access-by-email"
+    ],
+    [
+      "user",
+      "invite-by-email"
+    ],
+    [
+      "version",
+      "list-attachment-versions"
+    ],
+    [
+      "version",
+      "list-attachment-details"
+    ],
+    [
+      "version",
+      "list-blog-post-versions"
+    ],
+    [
+      "version",
+      "list-blog-post-details"
+    ],
+    [
+      "version",
+      "list-page-versions"
+    ],
+    [
+      "version",
+      "list-page-details"
+    ],
+    [
+      "version",
+      "list-custom-content-versions"
+    ],
+    [
+      "version",
+      "list-custom-content-details"
+    ],
+    [
+      "version",
+      "list-footer-comment-versions"
+    ],
+    [
+      "version",
+      "list-footer-comment-details"
+    ],
+    [
+      "version",
+      "list-inline-comment-versions"
+    ],
+    [
+      "version",
+      "list-inline-comment-details"
+    ],
+    [
+      "whiteboard",
+      "create"
+    ],
+    [
+      "whiteboard",
+      "get"
+    ],
+    [
+      "whiteboard",
+      "delete"
+    ]
+  ],
+  "package": "codapact_confluence",
+  "prefix": "CONFLUENCE",
+  "program": "codapact-confluence",
+  "response_validation": "strict",
+  "scenarios": [],
+  "schemes": [
+    {
+      "kind": "basic",
+      "location": null,
+      "name": "basic",
+      "wire": null
+    },
+    {
+      "kind": "custom",
+      "location": null,
+      "name": "session",
+      "wire": null
+    }
+  ],
+  "smoke": [
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "admin-key get",
+      "run": [
+        "admin-key",
+        "get"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "app-properties list",
+      "run": [
+        "app-properties",
+        "list"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "attachment list-attachments",
+      "run": [
+        "attachment",
+        "list-attachments"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "blog-post list-blog-posts",
+      "run": [
+        "blog-post",
+        "list-blog-posts"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "classification-level list-classification-levels",
+      "run": [
+        "classification-level",
+        "list-classification-levels"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "comment list-footer-comments",
+      "run": [
+        "comment",
+        "list-footer-comments"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "comment list-inline-comments",
+      "run": [
+        "comment",
+        "list-inline-comments"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "data-policies get-metadata",
+      "run": [
+        "data-policies",
+        "get-metadata"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "data-policies list-spaces",
+      "run": [
+        "data-policies",
+        "list-spaces"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "label list-labels",
+      "run": [
+        "label",
+        "list-labels"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "page list-pages",
+      "run": [
+        "page",
+        "list-pages"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "space list-spaces",
+      "run": [
+        "space",
+        "list-spaces"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "space-permission-transition list-space-permission-combinations",
+      "run": [
+        "space-permission-transition",
+        "list-space-permission-combinations"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "space-permissions list",
+      "run": [
+        "space-permissions",
+        "list"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "space-roles list",
+      "run": [
+        "space-roles",
+        "list"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "space-roles get-mode",
+      "run": [
+        "space-roles",
+        "get-mode"
+      ]
+    },
+    {
+      "auth": [
+        [
+          "basic"
+        ],
+        [
+          "session"
+        ]
+      ],
+      "name": "task list-tasks",
+      "run": [
+        "task",
+        "list-tasks"
+      ]
+    }
+  ],
+  "suite_version": 1
+}

@@ -1,0 +1,60 @@
+version: 1
+source:
+  type: openapi
+  path: openapi.json
+  upstream: https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json
+shape:
+  - server: {url: "https://your-site.atlassian.net", prefix: /wiki/api/v2}
+  - group: {by: tag}
+  - auth: {schemes: {basic: basic}}
+  - auth: {schemes: {session: {custom: "Browser sign-in"}}, alternative: true}
+cli:
+  env_prefix: CONFLUENCE
+  extensions: ["codapact_confluence._docformat:extension"]
+  auth:
+    basic:
+      check: getSpaces
+      docs: >-
+        Use your Atlassian account email as the username and an API token as the password
+        (create one at https://id.atlassian.com/manage-profile/security/api-tokens).
+    session:
+      check: getSpaces
+      docs: >-
+        For sites where API tokens are disabled: signs in through a browser window and
+        sends the session cookies.
+      browser:
+        login_url: "{base_url}/wiki"
+        cookies: [tenant.session.token]
+        headers: {X-Atlassian-Token: no-check}
+        signin_hosts: ["id.atlassian.com", "*.okta.com"]
+readme:
+  name: Confluence Cloud
+  docs: https://developer.atlassian.com/cloud/confluence/rest/v2/
+  repository: mikejhill/codapact-confluence
+  examples:
+    - "space list-spaces --keys DOCS"
+    - "page get --id 123456 --query body.markdown.value"
+    - "page create --space-id 98765 --title 'Release notes' --markdown @notes.md"
+    - "page update 123456 --body '{\"id\":\"123456\",\"status\":\"current\",\"title\":\"Release notes\",\"version\":{\"number\":2}}' --markdown @notes.md"
+  sections:
+    - title: Markdown
+      body: |
+        Page, blog post and comment bodies are Markdown both ways. `--markdown TEXT|@file|@-`
+        sets the body to send; commands with `--body-format` read `atlas_doc_format` and return it
+        as `body.markdown.value`. `--doc-format adf` (or `CONFLUENCE_DOC_FORMAT=adf`) keeps ADF.
+        Macros are directives such as `::toc{maxLevel=2}`, `:::info`, `:jira[PROJ-1]`; run
+        `uvx adflux macros NAME` for a macro's parameters and `uvx adflux syntax` for the dialect.
+    - title: Sign-in
+      body: |
+        Set `--base-url` (or `CONFLUENCE_BASE_URL`) to your site, for example
+        `https://your-site.atlassian.net`. An API token is preferred: `codapact-confluence auth login
+        --scheme basic` with your Atlassian email and a token from
+        https://id.atlassian.com/manage-profile/security/api-tokens. Where API tokens are
+        disabled, `codapact-confluence auth login --scheme session` opens a browser window for
+        single sign-on, saves the session cookies in your keyring, and renews them without a
+        window until your identity provider asks for you again. Browser sign-in needs Chrome,
+        Edge or `playwright install chromium`.
+targets:
+  - {name: python, output: gen/python, options: {package: codapact_confluence, distribution: codapact-confluence, include: {_docformat.py: handlers/docformat.py}}}
+  - {name: python-cli, output: gen/python}
+  - {name: python-readme, output: .}

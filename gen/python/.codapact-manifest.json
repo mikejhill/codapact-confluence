@@ -1,0 +1,26 @@
+{
+  "config_sha256": "bdbe14d20672a487a423dbd12a7e416be83fb61ca75ae4f73ec6629ffebe69a3",
+  "files": {
+    "README.md": "1e8f1bcfe20b720386655210d1fc5583252fd6a662292a3fc1fd0dc94e614534",
+    "pyproject.toml": "c8d226d54928a68f24455eaab344451c036f3a78fb1073f05bb8daac409d284b",
+    "src/codapact_confluence/__init__.py": "04456fcab490bd03745796a9af2de4b6cadc13bdf842d6de261ee1a263f52b8d",
+    "src/codapact_confluence/__main__.py": "c66f72e21443a96f151e35aebc1c0711090aaf3eff12540bb4e3f67c2f06bc1c",
+    "src/codapact_confluence/_docformat.py": "b44372c85257e42196cf9f15d792788d690877c8956a1b32783711621f1bd465",
+    "src/codapact_confluence/_model.json": "c2ed995fe1f63fb6603229b9a98e5b87c3f680086a09d68a470ca0782ac71766",
+    "src/codapact_confluence/cli.py": "b92cdc905ebbff57f962c943c74d8d0fdc4cb84c265fc385bb7ace0edc6b74c5",
+    "src/codapact_confluence/client.py": "622bc877030a59d726bad0b8e7ed59125e1916a6ae4a80de23b0960e02f99f42",
+    "src/codapact_confluence/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/codapact_confluence/types.py": "6ff628842504d426128a62494f87808e883932346f38294fbad3169b432e6358",
+    "tests/e2e.json": "9c2dbacb186bd2f8e46d873790736a5dc02a955a7a54e2c883eb9bebac48a900",
+    "tests/test_e2e.py": "f5e47f5eeddb7346a6561b9dfda1494022cc3846ddcd7fffb874bdd52583ffce"
+  },
+  "generated_at": "2026-11-25T22:20:04Z",
+  "generator": "codapact/0.17.3",
+  "source": {
+    "location": "openapi.json",
+    "sha256": "40535e2a2c01547d53d824d68299098c9073e5bf7ed98a71634706759becfa31",
+    "type": "openapi",
+    "upstream": "https://dac-static.atlassian.com/cloud/confluence/openapi-v2.v3.json"
+  },
+  "version": 1
+}
